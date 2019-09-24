@@ -4019,3 +4019,14 @@ body.is-ie #wrapper>section>.content>section {
 	margin: auto;
 	cursor: pointer;
 }
+
+.social-item {
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+}
+
+.social-item img {
+	width: 35px;
+	margin-right: 10px;
+}

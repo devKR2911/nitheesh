@@ -226,3 +226,7 @@ function getMyExperience() {
 function goToSite(url) {
 	window.open(url, '_blank');
 }
+
+function sendMail() {
+	window.location = "mailto:ramakrishnan.nitheesh@gmail.com";
+}

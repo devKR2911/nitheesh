@@ -222,3 +222,7 @@ function getMyExperience() {
 	expStr += num_months > 0 ? ' and ' + num_months + ' months' : '';
 	document.getElementById('total-experience').innerHTML = expStr
 }
+
+function goToSite(url) {
+	window.open(url, '_blank');
+}

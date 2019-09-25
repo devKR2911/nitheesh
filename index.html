@@ -1,158 +1,107 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Front End Developer</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/styles.css" />
-	<link rel="stylesheet" href="assets/css/animate.css" />
-	<script src="assets/js/wow.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nitheesh KR - Portfolio</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script type="application/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="application/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="application/javascript" src="./js/wow.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+
 </head>
 
-<body class="is-preload">
+<body>
+    <div class="row section-container">
+        <div class="col-lg-6 col-sm-12 section-header">
+            <h1 data-wow-delay=".25s" class="wow fadeIn">Nitheesh KR</h1>
+            <p data-wow-delay=".25s" class="wow fadeIn">A PASSIONATE FRONT END DEVELOPER WITH <span
+                    id="total-experience"></span> OF INDUSTRIAL EXPERIENCE.</p>
+        </div>
+        <div class="col-lg-6 col-sm-12 section-content">
+            <div class="profile-image-container"></div>
+        </div>
+    </div>
+    <div class="row section-container">
+        <div class="col-lg-6 col-sm-12 col-xs-12 section-header">
+            <h1 class="section-title wow fadeIn" data-wow-delay=".25s">Technologies</h1>
+        </div>
+        <div class="col-lg-6 col-sm-12 col-xs-12 section-content">
+            <div class="technology-container">
+                <div class="technology-item wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/technologies/angular.svg" alt="">
+                </div>
+                <div class="technology-item wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/technologies/react.svg" alt="">
+                </div>
+                <div class="technology-item wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/technologies/vuejs.png" alt="">
+                </div>
+            </div>
+            <div class="technology-container">
+                <div class="technology-item wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/technologies/nodejs.png" alt="">
+                </div>
+                <div class="technology-item wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/technologies/bootstrap.png" alt="">
+                </div>
+            </div>
+            <div class="technology-container">
+                <div class="technology-item wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/technologies/sass.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<!-- Wrapper -->
-	<div id="wrapper">
-
-		<!-- Intro -->
-		<section class="intro">
-			<header>
-				<h1>Nitheesh KR</h1>
-				<p>A passionate front end developer with <span id="total-experience"></span> of industrial experience.
-				</p>
-				<ul class="actions">
-					<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-				</ul>
-			</header>
-			<div class="content">
-				<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
-			</div>
-		</section>
-
-		<!-- Section -->
-		<section id="first">
-			<header>
-				<h2 data-wow-delay=".25s" class="wow fadeIn">Technologies</h2>
-			</header>
-			<div class="content">
-				<div class="technology-container">
-					<div class="technology-image">
-						<img src="images/technologies/angular.svg"
-							data-wow-delay=".25s" class="wow pulse"
-						 	alt="" title="Angular"
-							onclick="goToSite('https://angular.io')">
-
-					</div>
-					<div class="technology-image">
-						<img src="images/technologies/react.svg"
-							data-wow-delay=".25s" class="wow pulse"
-							alt="" title="React JS"
-							onclick="goToSite('https://reactjs.org')">
-
-
-
-					</div>
-					<div class="technology-image">
-						<img src="images/technologies/vuejs.png" 
-							data-wow-delay=".25s" class="wow pulse"
-							alt="" title="Vue JS"
-							onclick="goToSite('http://vuejs.org')">
-					</div>
-				</div>
-				<div class="technology-container">
-					<div class="technology-image">
-						<img src="images/technologies/nodejs.png"
-							data-wow-delay=".25s" class="wow pulse"
-							alt="" title="Node JS"
-							onclick="goToSite('https://nodejs.org/en/')">
-					</div>
-					<div class="technology-image">
-						<img src="images/technologies/sass.svg"
-							data-wow-delay=".25s" class="wow pulse"
-							alt="" title="SASS"
-							onclick="goToSite('https://sass-lang.com/')">
-					</div>
-				</div>
-				<div class="technology-container">
-					<div class="technology-image">
-						<img src="images/technologies/bootstrap.png"
-							data-wow-delay=".25s" class="wow pulse"
-							alt="" title="Bootstrap"
-							onclick="goToSite('https://getbootstrap.com/')">
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Section -->
-		<section>
-			<header>
-				<h2 data-wow-delay=".25s" class="wow fadeIn">Contact and Profiles</h2>
-			</header>
-			<div class="content">
-				<ul class="feature-icons">
-					<li class="icon solid social-item wow fadeIn" 
-						data-wow-delay=".25s"
-						onclick="sendMail()" title="Gmail">
-							<img src="images/social/gmail.svg" alt="">
-							Gmail
-					</li>
-					<li class="icon solid social-item wow fadeIn" 
-						data-wow-delay=".25s"
-						title="Mobile" onclick="window.open('tel:+918891197611');">
-						<img src="images/social/phone.svg" alt="">
-						+91 8891197611
-					</li>
-					<li class="icon solid social-item wow fadeIn" 
-						data-wow-delay=".25s"
-						onclick="goToSite('https://www.linkedin.com/in/nitheesh-kr/')"
-						title="LinkedIn">
-						<img src="images/social/linkedin.svg" alt="">
-						LinkedIn
-					</li>
-					<li class="icon solid social-item wow fadeIn" 
-						data-wow-delay=".25s"
-						onclick="goToSite('https://medium.com/@nitheeshkr115')"
-						title="Medium">
-						<img src="images/social/medium.svg" alt="">
-						Medium
-					</li>
-					<li class="icon solid social-item wow fadeIn"
-						data-wow-delay=".25s"
-						onclick="goToSite('https://stackoverflow.com/users/6099327/nitheesh')" title="Stack Overflow">
-						<img src="images/social/stackoverflow.svg" alt="">
-						Stack Overflow
-					</li>
-					<li class="icon solid social-item wow fadeIn" 
-						data-wow-delay=".25s"
-						onclick="goToSite('https://github.com/devKR2911/')"
-						title="GitHub">
-						<img src="images/social/github.svg" alt="">
-						GitHub
-					</li>
-				</ul>
-			</div>
-		</section>
-
-
-		<!-- Copyright -->
-		<div class="copyright">&copy; 2019. Nitheesh KR</a>.
-		</div>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+    <div class="row section-container">
+        <div class="col-lg-6 col-sm-12 section-header">
+            <h1 class="section-title wow fadeIn" data-wow-delay=".25s">CONTACT AND PROFILES</h1>
+        </div>
+        <div class="col-lg-6 col-sm-12 section-content">
+            <div class="contacts-container row">
+                <div class="contact-item col-lg-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/social/gmail.svg" alt="">
+                    Gmail
+                </div>
+                <div class="contact-item col-lg-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/social/phone.svg" alt="">
+                    +91 8891197611
+                </div>
+            </div>
+            <div class="contacts-container row">
+                <div class="contact-item col-lg-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/social/linkedin.svg" alt="">
+                    LinkedIn
+                </div>
+                <div class="contact-item col-lg-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/social/medium.svg" alt="">
+                    Medium
+                </div>
+            </div>
+            <div class="contacts-container row">
+                <div class="contact-item col-lg-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/social/stackoverflow.svg" alt="">
+                    Stack Overflow
+                </div>
+                <div class="contact-item col-lg-6 col-sm-12 col-xs-12 wow fadeIn" data-wow-delay=".25s">
+                    <img src="./assets/social/github.svg" alt="">
+                    GitHub
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

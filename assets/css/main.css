@@ -401,6 +401,10 @@ h6 {
 		font-size: 0.675rem;
 	}
 
+	.technology-image img {
+		max-width: 75px;
+	}
+
 }
 
 sub {
@@ -3509,7 +3513,7 @@ ul.feature-icons li:nth-child(2) {
 }
 
 #wrapper section {
-	margin: 7.5rem 0 0 0;
+	margin: 8.5rem 0 0 0;
 }
 
 #wrapper section>header {
@@ -4000,33 +4004,4 @@ body.is-ie #wrapper>section>.content>section {
 		padding: 4rem;
 	}
 
-}
-
-.technology-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin: 20px 0;
-}
-
-.technology-image {
-	width: 33.33%;
-	text-align: center;
-}
-
-.technology-image img {
-	max-width: 100px;
-	margin: auto;
-	cursor: pointer;
-}
-
-.social-item {
-	cursor: pointer;
-	display: flex;
-	flex-direction: row;
-}
-
-.social-item img {
-	width: 35px;
-	margin-right: 10px;
 }

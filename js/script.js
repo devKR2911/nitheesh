@@ -28,3 +28,11 @@ function goToSite(url) {
 function sendMail() {
     window.location = "mailto:ramakrishnan.nitheesh@gmail.com";
 }
+
+function goTo(url) {
+    window.open(url, '_blank');
+}
+
+function callTo() {
+    window.open("tel:+918891197611")
+}

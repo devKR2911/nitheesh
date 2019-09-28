@@ -41,6 +41,15 @@ h1.section-title {
   justify-content: center;
   text-align: right;
   padding-right: 3rem;
+  padding-left: 3rem;
+  position: relative;
+}
+
+.section-content .copyright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8rem;
 }
 
 .section-header p {
@@ -54,6 +63,7 @@ h1.section-title {
   margin: 0;
   justify-content: center;
   display: flex;
+  position: relative;
   flex-direction: column;
 }
 
@@ -63,6 +73,10 @@ h1.section-title {
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
+}
+
+.strike {
+  text-decoration: line-through;
 }
 
 .technology-container {

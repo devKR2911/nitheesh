@@ -1,0 +1,9 @@
+<div class="w-100">
+    <h2 class="mb-5">Awards</h2>
+    <ul class="fa-ul mb-0">
+        <li *ngFor="let award of awardList">
+            <i class="fa-li fa fa-trophy text-success"></i>
+            <span [innerHTML]="award.title"></span>
+        </li>
+    </ul>
+</div>

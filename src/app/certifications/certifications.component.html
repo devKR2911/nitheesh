@@ -1,0 +1,11 @@
+<div class="w-100">
+    <h2 class="mb-5">Trainings</h2>
+    <ul class="fa-ul mb-0">
+        <li *ngFor="let certification of certificationList">
+            <i class="fa-li fa fa-trophy text-success"></i>
+            <a [href]="certification.link" target="blank">
+                {{certification.title}}
+            </a>
+        </li>
+    </ul>
+</div>

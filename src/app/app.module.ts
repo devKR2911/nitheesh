@@ -12,6 +12,8 @@ import { SkillsComponent } from './skills/skills.component';
 import { InterestsComponent } from './interests/interests.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { AwardsComponent } from './awards/awards.component';
+import { PersonalDetailsComponent } from './personal-details/personal-details.component';
+import { ResumeLayoutComponent } from './resume-layout/resume-layout.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { AwardsComponent } from './awards/awards.component';
     SkillsComponent,
     InterestsComponent,
     CertificationsComponent,
-    AwardsComponent
+    AwardsComponent,
+    PersonalDetailsComponent,
+    ResumeLayoutComponent
   ],
   imports: [
     BrowserModule,

@@ -19,3 +19,9 @@
 .p-0 {
     padding: 0;
 }
+
+.flex-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

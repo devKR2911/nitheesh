@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { aboutMe, getMyExperience } from '../../../assets/data/about-me';
+import aboutMe from '../../../assets/data/about-me';
 
 @Component({
   selector: 'app-about-me',
@@ -16,8 +16,6 @@ export class AboutMeComponent implements OnInit {
     window.open(link, "_blank");
   }
 
-  ngOnInit(): void {
-    this.experienceStr = getMyExperience();
-  }
+  ngOnInit(): void {}
 
 }

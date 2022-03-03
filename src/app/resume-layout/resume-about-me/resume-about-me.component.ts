@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { aboutMe, getMyExperience } from '../../../assets/data/about-me';
+import aboutMe from '../../../assets/data/about-me';
 
 @Component({
   selector: 'app-resume-about-me',
@@ -12,8 +12,6 @@ export class ResumeAboutMeComponent implements OnInit {
   experienceStr:string = '';
   user = aboutMe;
 
-  ngOnInit(): void {
-    this.experienceStr = getMyExperience();
-  }
+  ngOnInit(): void {}
 
 }

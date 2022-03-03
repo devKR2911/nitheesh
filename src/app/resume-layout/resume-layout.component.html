@@ -3,21 +3,7 @@
     <div class="row mt-5">
         <div class="col-12">
             <app-resume-about-me></app-resume-about-me>
-            
-            <div class="row">
-                <p class="info">Experience</p>
-                <div class="row" *ngFor="let exp of experienceList" >
-                    <div class="col-12">
-                        <p>
-                            <b>{{ exp.company }}</b>, {{ exp.location }} — {{ exp.designation }}
-                        </p>
-                        <p>
-                            <small>{{ exp.duration }}</small>
-                        </p>
-                        <p>{{ exp.description }}</p>
-                    </div>
-                </div>
-            </div>
+            <app-resume-experience></app-resume-experience>
             <div class="row">
                 <p class="info">Education</p>
                 <div class="row" *ngFor="let edu of educationList" >
@@ -33,25 +19,5 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="col-4">
-            <a href="">ramakrishnan.nitheesh@gmail.com</a>
-            <ul>
-                <li>
-                    <a href="">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="">Medium</a>
-                </li>
-                <li>
-                    <a href="">Stack Overflow</a>
-                </li>
-                <li>
-                    <a href="">GitHub</a>
-                </li>
-                <li>
-                    <a href="">Portfolio</a>
-                </li>
-            </ul>
-        </div> -->
     </div>
 </div>

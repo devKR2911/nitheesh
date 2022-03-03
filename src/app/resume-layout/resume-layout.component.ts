@@ -9,22 +9,6 @@ export class ResumeLayoutComponent implements OnInit {
 
   constructor() {}
 
-  experienceList = [
-    {
-      company: "Tata Consultancy Services",
-      location: "Trivandrum, Kerala, India",
-      designation: "I.T Analyst",
-      duration: "October 2018 - PRESENT",
-      description: "Full Stack developer with proficiency in technologies like React JS, Vue JS, Angular 8, MongoDB, GraphQL, Node JS, TypeScript, D3, SASS, Redux Saga."
-    },
-    {
-      company: "Triassic Solutions PVT LTD",
-      location: "Trivandrum, Kerala, India",
-      designation: "Senior Software Engineer",
-      duration: "July 2014 - September 2018",
-      description: "Frontend developer with proficiency in technologies like Angular 6, Angular JS, Ionic 3, Ionic, Kendo UI, HTML, jQuery, Javascript, Bootstrap 3, Bootstrap 4."
-    }
-  ]
 
   educationList = [
     {

@@ -1,8 +1,9 @@
-export const aboutMe = {
+const aboutMe = {
     firstName: 'Nitheesh',
     lastName: 'KR',
     location: 'Vadakkekad, Thrissur, Kerala, India',
     email: 'ramakrishnan.nitheesh@gmail.com',
+    experienceStr: getMyExperience(), // Will be generated
     social: {
         linkedin: 'https://www.linkedin.com/in/nitheesh-kr/',
         github: 'https://github.com/devKR2911/',
@@ -17,7 +18,7 @@ export const aboutMe = {
     resume: 'assets/documents/Nitheesh_KR_Resume.pdf',
 }
 
-export function getMyExperience() {
+function getMyExperience() {
     var startDate: any = new Date(2014, 6, 7);
     var currentDate: any = new Date();
     var diff_date: any = currentDate - startDate;
@@ -31,3 +32,5 @@ export function getMyExperience() {
     expStr += num_months > 0 ? ' and ' + num_months + ' months' : '';
     return expStr;
 }
+
+export default aboutMe;

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { educationList } from '../../../assets/data/education';
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss']
+  selector: 'app-resume-education',
+  templateUrl: './resume-education.component.html',
+  styleUrls: ['./resume-education.component.scss']
 })
-export class EducationComponent implements OnInit {
+export class ResumeEducationComponent implements OnInit {
 
   constructor() { }
 

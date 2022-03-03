@@ -4,20 +4,7 @@
         <div class="col-12">
             <app-resume-about-me></app-resume-about-me>
             <app-resume-experience></app-resume-experience>
-            <div class="row">
-                <p class="info">Education</p>
-                <div class="row" *ngFor="let edu of educationList" >
-                    <div class="col-12">
-                        <p>
-                            <b>{{ edu.institute }}</b>, {{ edu.location }} — {{ edu.degree }}
-                        </p>
-                        <p>
-                            <small>{{ edu.duration }}</small>
-                        </p>
-                        <p *ngIf="edu.branch">Branch: {{ edu.branch }}</p>
-                    </div>
-                </div>
-            </div>
+            <app-resume-education></app-resume-education>
         </div>
     </div>
 </div>

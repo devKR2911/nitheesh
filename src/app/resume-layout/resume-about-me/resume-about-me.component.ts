@@ -2,19 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { aboutMe, getMyExperience } from '../../../assets/data/about-me';
 
 @Component({
-  selector: 'app-about-me',
-  templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.scss']
+  selector: 'app-resume-about-me',
+  templateUrl: './resume-about-me.component.html',
+  styleUrls: ['./resume-about-me.component.scss']
 })
-export class AboutMeComponent implements OnInit {
+export class ResumeAboutMeComponent implements OnInit {
 
   constructor() { }
   experienceStr:string = '';
   user = aboutMe;
-
-  public goToLink(link:string) {
-    window.open(link, "_blank");
-  }
 
   ngOnInit(): void {
     this.experienceStr = getMyExperience();

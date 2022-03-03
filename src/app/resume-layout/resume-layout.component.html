@@ -1,17 +1,9 @@
 <button class="showoff" (click)="downloadResume()">Download Resume</button>
 <div class="container">
     <div class="row mt-5">
-        <div class="col-8">
-            <div class="row">
-                <h1 class="mb-3">
-                    Nitheesh
-                    <span class="text-primary">KR</span>
-                </h1>
-                <p class="lead mb-4">
-                    Since July 2014, I've been a dedicated Full Stack engineer in the IT industry. I
-                    hold a Bachelor of Technology degree in Electronics and Communication.
-                </p>
-            </div>
+        <div class="col-12">
+            <app-resume-about-me></app-resume-about-me>
+            
             <div class="row">
                 <p class="info">Experience</p>
                 <div class="row" *ngFor="let exp of experienceList" >
@@ -41,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <!-- <div class="col-4">
             <a href="">ramakrishnan.nitheesh@gmail.com</a>
             <ul>
                 <li>
@@ -60,6 +52,6 @@
                     <a href="">Portfolio</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </div>

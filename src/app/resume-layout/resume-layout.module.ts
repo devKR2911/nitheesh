@@ -6,6 +6,8 @@ import { ResumeAboutMeComponent } from './resume-about-me/resume-about-me.compon
 import { ResumeExperienceComponent } from './resume-experience/resume-experience.component';
 import { ResumeEducationComponent } from './resume-education/resume-education.component';
 import { ResumeProjectsComponent } from './resume-projects/resume-projects.component';
+import { ResumeSkillsComponent } from './resume-skills/resume-skills.component';
+import { ResumeTrainingComponent } from './resume-training/resume-training.component';
 
 
 
@@ -16,6 +18,8 @@ import { ResumeProjectsComponent } from './resume-projects/resume-projects.compo
     ResumeExperienceComponent,
     ResumeEducationComponent,
     ResumeProjectsComponent,
+    ResumeSkillsComponent,
+    ResumeTrainingComponent,
   ],
   imports: [
     CommonModule,

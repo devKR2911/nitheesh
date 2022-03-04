@@ -9,6 +9,7 @@ import { ResumeProjectsComponent } from './resume-projects/resume-projects.compo
 import { ResumeSkillsComponent } from './resume-skills/resume-skills.component';
 import { ResumeTrainingComponent } from './resume-training/resume-training.component';
 import { ResumeDeclarationComponent } from './resume-declaration/resume-declaration.component';
+import { ResumeAdditionalInformationComponent } from './resume-additional-information/resume-additional-information.component';
 
 
 
@@ -22,6 +23,7 @@ import { ResumeDeclarationComponent } from './resume-declaration/resume-declarat
     ResumeSkillsComponent,
     ResumeTrainingComponent,
     ResumeDeclarationComponent,
+    ResumeAdditionalInformationComponent,
   ],
   imports: [
     CommonModule,

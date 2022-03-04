@@ -5,18 +5,8 @@
             <span class="text-primary">{{ user.lastName }}</span>
         </h1>
     </div>
-    <div class="col-12 p-0 subheading mb-3">
-        <a [href]="'mailto:' + user.email"
-        class="mr-4"
-            title="Email">
-            <i class="fas fa-envelope mr-1"></i> {{ user.email }}
-        </a>
-        <a title="Location">
-            <i class="fas fa-map-marker-alt mr-1"></i> {{ user.location }}
-        </a>
-    </div>
     <div class="col-12 p-0">
-        <p class="text-primary mb-4">
+        <p class="black mb-4">
             <span [innerHTML]="user.aboutMe"></span>
             <span>{{ user.experienceStr }}</span>
             <span [innerHTML]="user.aboutMe2"></span>

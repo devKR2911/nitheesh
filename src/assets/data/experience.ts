@@ -2,6 +2,10 @@ const experienceList: any[] = [
     {
         id: 0,
         designation: "IT Analyst.",
+        designations: [
+            { designation: "Assistant Consultant.", startDate: "01-01-2022", endDate: null },
+            { designation: "IT Analyst.", startDate: "10-10-2018", endDate: "12-31-2021" },
+        ],
         company: {
             name: "TATA Consultancy Services",
             link: "https://www.tcs.com/",
@@ -13,6 +17,10 @@ const experienceList: any[] = [
     {
         id: 1,
         designation: "Senior Software Engineer.",
+        designations: [
+            { designation: "Senior Software Engineer.", startDate: "04-01-2018", endDate: "09-24-2018" },
+            { designation: "Software Engineer.", startDate: "07-07-2014", endDate: "03-31-2018" },
+        ],
         company: {
             name: "Triassic Solutions Private Ltd.",
             link: "http://www.triassicsolutions.com/",
@@ -35,6 +43,9 @@ function getDate(date: string) {
 function getExperience() {
     experienceList.forEach((experience: any) => {
         experience.experienceStr = `${getDate(experience.startDate)} - ${getDate(experience.endDate)}`
+        experience.designations.forEach((designation: any) => {
+            designation.experienceStr = `${getDate(designation.startDate)} - ${getDate(designation.endDate)}`
+        })
     })
 }
 

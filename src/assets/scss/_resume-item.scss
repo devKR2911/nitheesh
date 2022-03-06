@@ -8,20 +8,11 @@ section.resume-section {
     }
   }
 }
-/* Extra small devices (phones, 768px and down) */
-@media only screen and (max-width: 768px) {
-  section.resume-section {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
-    padding-top: 0;
-    padding-bottom: 0;
     .resume-item {
       .resume-date {
         min-width: 18rem;

@@ -5,12 +5,15 @@
         <div class="row resume-item d-flex flex-column flex-md-row justify-content-between mb-3"
             *ngFor="let experience of experienceList">
             <div class="resume-content col-12">
-                <div class="subheading mb-3">
+                <div class="subheading mb-3 d-flex flex-row justify-content-between">
                     <a [href]="experience.company.link" target="blank">
                         <h4>
                             {{ experience.company.name }}
                         </h4>
                     </a>
+                    <h5 class="text-primary">
+                        {{ experience.experienceStr }}
+                    </h5>
                 </div>
                 <div class="d-flex flex-row justify-content-between"
                     *ngFor="let node of experience.designations; let i = index">

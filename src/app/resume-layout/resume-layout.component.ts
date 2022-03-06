@@ -12,9 +12,4 @@ export class ResumeLayoutComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  downloadResume() {
-    window.parent.document.title = document.title;
-    window.print();
-  }
-
 }

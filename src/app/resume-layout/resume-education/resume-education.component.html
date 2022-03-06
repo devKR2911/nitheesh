@@ -11,9 +11,11 @@
                 </div>
                 <!-- <h4>University - {{ education.university }}</h4> -->
                 <div class="subheading">
-                    <h5 class="mb-2" (click)="openURL(education.link)">
+                    <h5 class="mb-2">
                         <span class="text-primary">
-                            {{ education.institute }}
+                            <a href="" (click)="openURL(education.link, $event)">
+                                {{ education.institute }}
+                            </a>
                         </span>
                         <span class="text-secondary">
                             - {{ education.location }}

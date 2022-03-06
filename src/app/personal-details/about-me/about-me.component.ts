@@ -12,10 +12,6 @@ export class AboutMeComponent implements OnInit {
   experienceStr:string = '';
   user = aboutMe;
 
-  public goToLink(link:string) {
-    window.open(link, "_blank");
-  }
-
   ngOnInit(): void {}
 
 }

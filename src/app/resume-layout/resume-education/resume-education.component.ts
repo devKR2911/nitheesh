@@ -12,8 +12,12 @@ export class ResumeEducationComponent implements OnInit {
 
   educationList = educationList;
 
-  openURL(url:string) {
-    window.open(url, "_blank");
+  openURL(url: string, event: Event) {
+    if (url) {
+      window.open(url, "_blank");
+      event.preventDefault();
+      event.stopPropagation();
+    }
   }
 
   ngOnInit(): void {

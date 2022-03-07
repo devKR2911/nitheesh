@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import skills from '../../../assets/data/skills';
 
 @Component({
   selector: 'app-resume-skills',
@@ -9,12 +10,7 @@ export class ResumeSkillsComponent implements OnInit {
 
   constructor() { }
 
-  skills = {
-    programingLanguages: ["React JS", "Vue JS", "Angular", "Angular JS", "Node JS", "GraphQL", "Ionic 4", "Ionic", "Kendo UI", "TypeScript", "JavaScript", "jQuery", "HTML" ],
-    applications: [" Visual Studio Code", "Visual Studio 2013", "Brackets"],
-    database: ["MySQL", "MongoDB"],
-    opperatingSystem: ["Windows", "Linux"]
-  };
+  skills = skills;
 
   ngOnInit(): void {
   }

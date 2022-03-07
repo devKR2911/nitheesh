@@ -14,7 +14,6 @@ export class ResumeEducationComponent implements OnInit {
 
   openURL(url: string, event: Event) {
     if (url) {
-      console.log(url)
       window.open(url, "_blank");
       event.preventDefault();
       event.stopPropagation();

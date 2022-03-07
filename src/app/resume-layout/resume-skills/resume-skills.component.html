@@ -5,26 +5,31 @@
         <div class="row mb-3">
             <div class="col-12">
                 <b class="text-secondary">Programing Languages: &nbsp;</b>
-                <span class="black" *ngFor="let programingLanguage of skills.programingLanguages">
-                    {{ programingLanguage }}, &nbsp;
+                <span class="black"
+                    *ngFor="let programingLanguage of skills.programingLanguages; let i = index">
+                    {{ programingLanguage }}<span *ngIf="i === skills.programingLanguages.length - 1">.</span>
+                    <span *ngIf="i !== skills.programingLanguages.length - 1">,</span>
                 </span>
             </div>
             <div class="col-12">
                 <b class="text-secondary">Database Technologies: &nbsp;</b>
-                <span class="black" *ngFor="let db of skills.database">
-                    {{ db }}, &nbsp;
+                <span class="black" *ngFor="let db of skills.database; let i = index">
+                    {{ db }}<span *ngIf="i === skills.database.length - 1">.</span>
+                    <span *ngIf="i !== skills.database.length - 1">,</span>
                 </span>
             </div>
             <div class="col-12">
                 <b class="text-secondary">Applications: &nbsp;</b>
-                <span class="black" *ngFor="let application of skills.applications">
-                    {{ application }}, &nbsp;
+                <span class="black" *ngFor="let application of skills.applications; let i = index">
+                    {{ application }}<span *ngIf="i === skills.applications.length - 1">.</span>
+                    <span *ngIf="i !== skills.applications.length - 1">,</span>
                 </span>
             </div>
             <div class="col-12">
                 <b class="text-secondary">Operating System: &nbsp;</b>
-                <span class="black" *ngFor="let os of skills.opperatingSystem">
-                    {{ os }}, &nbsp;
+                <span class="black" *ngFor="let os of skills.opperatingSystem; let i = index">
+                    {{ os }}<span *ngIf="i === skills.opperatingSystem.length - 1">.</span>
+                    <span *ngIf="i !== skills.opperatingSystem.length - 1">,</span>
                 </span>
             </div>
         </div>

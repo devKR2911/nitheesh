@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-12 p-0 mb-3">
+        <h3 class="mb-3 text-primary">Projects</h3>
+
+        <div class="row resume-item d-flex flex-column flex-md-row justify-content-between mb-3"
+            *ngFor="let project of projects">
+            <div class="resume-content col-12">
+                <div class="subheading mb-3">
+                    <h4>{{ project.name }}</h4>
+                </div>
+                <div class="subheading">
+                    <h5>
+                        <span class="text-secondary">
+                            Client Location:
+                        </span>
+                        <span class="text-primary">
+                            {{ project.client_location }}
+                        </span>
+                    </h5>
+                </div>
+                <div class="mb-3">
+                    <span class="text-secondary">Technologies: </span>
+                    <span class="text-primary">{{ project.technologies }}</span>
+                </div>
+                <div class="black mb-2">
+                    {{ project.description }}
+                </div>
+                <ul class="black">
+                    <li *ngFor="let responsibility of project.responsibilities">
+                        {{ responsibility }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

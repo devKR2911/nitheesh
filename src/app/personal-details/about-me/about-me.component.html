@@ -1,0 +1,47 @@
+<div class="w-100">
+    <h1 class="mb-0">
+        {{ user.firstName }}
+        <span class="text-primary">{{ user.lastName }}</span>
+    </h1>
+    <div class="subheading">
+        {{ user.location }}
+    </div>
+    <div class="subheading mb-5">
+        <a [href]="'mailto:' + user.email">
+            {{ user.email }}
+        </a>
+    </div>
+    <p class="lead mb-4">
+        <span [innerHTML]="user.aboutMe"></span>
+        <span>{{ user.experienceStr }}</span>
+        <span [innerHTML]="user.aboutMe2"></span>
+    </p>
+    <div class="social-icons mb-5">
+        <a [href]="user.social.linkedin"
+            title="LinkedIn"
+            target="blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a [href]="user.social.github"
+            title="Github" target="blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a [href]="user.social.medium"
+            title="Medium" target="blank">
+            <i class="fab fa-medium"></i>
+        </a>
+        <a class="bg-transparent"
+            [href]="user.social.stackoverflow.profile"
+            title="Stack Overflow" target="blank">
+            <!-- <i class="fab fa-stack-overflow"></i> -->
+            <img [src]="user.social.stackoverflow.image" alt="">
+        </a>
+    </div>
+    <div class="social-icons">
+        <a type="button" title="Resume"
+            class="btn btn-primary"
+            routerLink="/resume">
+            Resume <i class="fas fa-file-pdf"></i>
+        </a>
+    </div>
+</div>

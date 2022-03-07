@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-12 p-0">
+        <h1 class="mb-3">
+            {{ user.firstName }}
+            <span class="text-primary">{{ user.lastName }}</span>
+        </h1>
+    </div>
+    <div class="col-12 p-0">
+        <p class="black">
+            <span [innerHTML]="user.aboutMe"></span>
+            <span>{{ user.experienceStr }}</span>
+            <span [innerHTML]="user.aboutMe2"></span>
+        </p>
+    </div>
+</div>

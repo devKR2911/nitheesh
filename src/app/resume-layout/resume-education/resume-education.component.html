@@ -1,0 +1,36 @@
+<div class="row mb-3">
+    <div class="col-12 p-0">
+        <h3 class="mb-3 text-primary">Education</h3>
+
+        <div class="row resume-item d-flex flex-column flex-md-row justify-content-between mb-3"
+            *ngFor="let education of educationList">
+            <div class="resume-content col-12">
+                <div class="subheading d-flex flex-row justify-content-between mb-3">
+                    <h4>University - {{ education.university }}</h4>
+                    <h5 class="text-secondary">{{ education.duration }}</h5>
+                </div>
+                <!-- <h4>University - {{ education.university }}</h4> -->
+                <div class="subheading">
+                    <h5 class="mb-2">
+                        <span class="text-primary">
+                            <a href="" (click)="openURL(education.link, $event)">
+                                {{ education.institute }}
+                            </a>
+                        </span>
+                        <span class="text-secondary">
+                            - {{ education.location }}
+                        </span>
+                    </h5>
+                </div>
+                <div class="subheading mb-3">
+                    <h5 class="mb-0 text-secondary">
+                        Degree - {{ education.degree }}
+                    </h5>
+                </div>
+                <div class="black">Course - {{ education.course }}</div>
+                <p class="black">{{ education.mark }}</p>
+            </div>
+            
+        </div>
+    </div>
+</div>

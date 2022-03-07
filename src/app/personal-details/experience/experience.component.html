@@ -1,0 +1,38 @@
+<div class="w-100">
+    <h2 class="mb-5">Experience</h2>
+
+    <div class="resume-item d-flex flex-column justify-content-between mb-5" *ngFor="let experience of experienceList">
+        <div class="resume-content">
+            <div class="row subheading mb-2 d-flex flex-row justify-content-between">
+                <div class="col-lg-6 col-sm-12">
+                    <h3>
+                        <a [href]="experience.company.link" target="blank">
+                            {{ experience.company.name }}
+                        </a>
+                    </h3>
+                </div>
+                <div class="col-lg-6 col-sm-12 text-lg-right">
+                    <span class="text-primary">
+                        {{ experience.experienceStr }}
+                    </span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="resume-content col-12">
+                    <div class="row d-flex flex-row justify-content-between"
+                        *ngFor="let node of experience.designations; let i = index">
+                        <div class="col-lg-6 col-sm-12">
+                            <h5 [class]="{'text-primary': i === 0, 'text-secondary': i !== 0}">{{ node.designation }}</h5>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 text-lg-right">
+                            <h5 [class]="{'text-primary': i === 0, 'text-secondary': i !== 0}">
+                                {{ node.experienceStr }}
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>{{ experience.description }}</p>
+        </div>
+    </div>
+</div>

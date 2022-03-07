@@ -20,7 +20,6 @@ export class ResumeEducationComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

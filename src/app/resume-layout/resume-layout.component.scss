@@ -2,11 +2,14 @@
 
 .container {
     width: 100%;
-    background: #fff;
+    background: $white;
     max-width: 900px;
     margin: 0 auto;
 }
 
 .wrapper {
     background: $grey;
+    @media print {
+        background: $white;
+    }
 }

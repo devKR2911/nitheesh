@@ -12,7 +12,6 @@ export class ResumeExperienceComponent implements OnInit {
 
   experienceList = experienceList;
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

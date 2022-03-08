@@ -19,7 +19,8 @@ const experienceList: any[] = [
         designation: "Senior Software Engineer.",
         designations: [
             { designation: "Senior Software Engineer.", startDate: "04-01-2018", endDate: "09-24-2018" },
-            { designation: "Software Engineer.", startDate: "07-07-2014", endDate: "03-31-2018" },
+            { designation: "Software Engineer.", startDate: "08-01-2015", endDate: "03-31-2018" },
+            { designation: "Engineer Trainee.", startDate: "07-07-2014", endDate: "07-31-2018" },
         ],
         company: {
             name: "Triassic Solutions Private Ltd.",

@@ -19,6 +19,13 @@
                 </span>
             </div>
             <div class="col-12">
+                <b class="text-secondary">Version Control Systems: &nbsp;</b>
+                <span class="black" *ngFor="let item of skills.versionControlSystems; let i = index">
+                    {{ item }}<span *ngIf="i === skills.versionControlSystems.length - 1">.</span>
+                    <span *ngIf="i !== skills.versionControlSystems.length - 1">,</span>
+                </span>
+            </div>
+            <div class="col-12">
                 <b class="text-secondary">Applications: &nbsp;</b>
                 <span class="black" *ngFor="let application of skills.applications; let i = index">
                     {{ application }}<span *ngIf="i === skills.applications.length - 1">.</span>

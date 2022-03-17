@@ -2,7 +2,8 @@
     <div class="col-12 mb-4">
         <div class="row">
             <div class="col-5 p-0">
-                <i class="fa fa-envelope text-primary"></i>
+                <i role="button" class="fa fa-envelope text-primary" (click)="copyToClipBoard(user.email)"
+                    title="Click the icon to copy mail id"></i>
                 <a [href]="'mailto:' + user.email" target="blank" class="ml-2">
                     {{ user.email }}
                 </a>
@@ -14,25 +15,31 @@
                 </a>
             </div>
             <div class="col-2 p-0">
-                <i class="fab fa-linkedin text-primary"></i>
+                <i role="button" class="fab fa-linkedin text-primary" (click)="copyToClipBoard(user.social.linkedin)"
+                    title="Click the icon to copy LinkedIn profile URL">
+                </i>
                 <a [href]="user.social.linkedin" target="blank" class="ml-2">
                     LinkedIn
                 </a>
             </div>
             <div class="col-5 p-0">
-                <i class="fab fa-stack-overflow text-primary"></i>
+                <i role="button" class="fab fa-stack-overflow text-primary"
+                    (click)="copyToClipBoard(user.social.stackoverflow.profile)"
+                    title="Click the icon to copy StackOverflow profile URL"></i>
                 <a [href]="user.social.stackoverflow.profile" target="blank" class="ml-2">
                     StackOverflow
                 </a>
             </div>
             <div class="col-5 p-0">
-                <i class="fab fa-github-square text-primary"></i>
+                <i role="button" class="fab fa-github-square text-primary" (click)="copyToClipBoard(user.social.github)"
+                    title="Click the icon to copy GitHub profile URL"></i>
                 <a [href]="user.social.github" target="blank" class="ml-2">
                     GitHub
                 </a>
             </div>
             <div class="col-2 p-0">
-                <i class="fab fa-medium text-primary"></i>
+                <i role="button" class="fab fa-medium text-primary" (click)="copyToClipBoard(user.social.medium)"
+                    title="Click the icon to copy Medium profile URL"></i>
                 <a [href]="user.social.medium" target="blank" class="ml-2">
                     Medium
                 </a>

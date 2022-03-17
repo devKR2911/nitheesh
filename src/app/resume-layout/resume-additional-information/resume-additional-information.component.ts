@@ -11,6 +11,10 @@ export class ResumeAdditionalInformationComponent implements OnInit {
   constructor() { }
   user = aboutMe;
 
+  copyToClipBoard(text: string) {
+    navigator.clipboard.writeText(text);
+  }
+
   ngOnInit(): void {
   }
 

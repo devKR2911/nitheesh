@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import aboutMe from '../../../assets/data/about-me';
+import { ToastService } from '../../shared/services/toast/toast.service';
 
 @Component({
   selector: 'app-resume-additional-information',
@@ -8,10 +9,14 @@ import aboutMe from '../../../assets/data/about-me';
 })
 export class ResumeAdditionalInformationComponent implements OnInit {
 
-  constructor() { }
+  constructor(public toastService: ToastService) { }
   user = aboutMe;
 
-  copyToClipBoard(text: string) {
+  copyToClipBoard(text: string, type: string) {
+    this.toastService.show(
+      `${type} has been copied to clipboard`,
+      { classname: 'bg-info text-light', delay: 8000 },
+    );
     navigator.clipboard.writeText(text);
   }
 

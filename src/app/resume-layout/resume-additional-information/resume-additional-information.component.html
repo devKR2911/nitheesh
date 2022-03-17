@@ -1,42 +1,42 @@
 <div class="row">
-    <div class="col-12">
-        <ul class="fa-ul mb-0">
-            <li>
-                <i class="fa-li fa fa-envelope text-primary"></i>
+    <div class="col-12 mb-4">
+        <div class="row">
+            <div class="col-5 p-0">
+                <i class="fa fa-envelope text-primary"></i>
                 <a [href]="'mailto:' + user.email" target="blank" class="ml-2">
                     {{ user.email }}
                 </a>
-            </li>
-            <li>
-                <i class="fa-li fa fa-map-marker-alt text-primary"></i>
+            </div>
+            <div class="col-5 p-0">
+                <i class="fa fa-map-marker-alt text-primary"></i>
                 <a class="ml-2">
                     {{ user.location }}
                 </a>
-            </li>
-            <li>
-                <i class="fa-li fab fa-linkedin text-primary"></i>
+            </div>
+            <div class="col-2 p-0">
+                <i class="fab fa-linkedin text-primary"></i>
                 <a [href]="user.social.linkedin" target="blank" class="ml-2">
                     LinkedIn
                 </a>
-            </li>
-            <li>
-                <i class="fa-li fab fa-stack-overflow text-primary"></i>
+            </div>
+            <div class="col-5 p-0">
+                <i class="fab fa-stack-overflow text-primary"></i>
                 <a [href]="user.social.stackoverflow.profile" target="blank" class="ml-2">
                     StackOverflow
                 </a>
-            </li>
-            <li>
-                <i class="fa-li fab fa-github-square text-primary"></i>
+            </div>
+            <div class="col-5 p-0">
+                <i class="fab fa-github-square text-primary"></i>
                 <a [href]="user.social.github" target="blank" class="ml-2">
                     GitHub
                 </a>
-            </li>
-            <li>
-                <i class="fa-li fab fa-medium text-primary"></i>
+            </div>
+            <div class="col-2 p-0">
+                <i class="fab fa-medium text-primary"></i>
                 <a [href]="user.social.medium" target="blank" class="ml-2">
                     Medium
                 </a>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
 </div>

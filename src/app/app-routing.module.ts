@@ -6,10 +6,10 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./personal-details/personal-details.module').then(m => m.PersonalDetailsModule)
   },
-  {
-    path: 'resume', 
-    loadChildren: () => import('./resume-layout/resume-layout.module').then(m => m.ResumeLayoutModule)
-   },
+  // {
+  //   path: 'resume', 
+  //   loadChildren: () => import('./resume-layout/resume-layout.module').then(m => m.ResumeLayoutModule)
+  //  },
 ];
 
 
